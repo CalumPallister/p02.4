@@ -30,4 +30,11 @@ def run_tests():
 
 def clean(nums, n):
 
+    if n in nums:
+        ammount = nums.count(n)
+        for i in range(ammount):
+            nums.remove(n)
+
+    print(nums)
+
 
